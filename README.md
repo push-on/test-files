@@ -1,6 +1,6 @@
-# SvelteKit + TS + SCSS + Vite
+# Opinionated SCSS scaffolding
 
-## **📦 Packages**
+## **📦 Packages Used**
 
 | Pacage Name                   | Description                       |
 | ----------------------------- | --------------------------------- |
