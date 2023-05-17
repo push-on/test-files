@@ -28,23 +28,23 @@
 declare module '$env/static/private' {
 	export const ALLUSERSPROFILE: string;
 	export const APPDATA: string;
-	export const COLORTERM: string;
 	export const CommonProgramFiles: string;
 	export const CommonProgramW6432: string;
 	export const COMPUTERNAME: string;
 	export const ComSpec: string;
-	export const CONDA_PROMPT_MODIFIER: string;
+	export const DOTNET_CLI_TELEMETRY_OPTOUT: string;
 	export const DriverData: string;
-	export const GIT_ASKPASS: string;
-	export const GOROOT: string;
+	export const FPS_BROWSER_APP_PROFILE_STRING: string;
+	export const FPS_BROWSER_USER_PROFILE_STRING: string;
 	export const HOME: string;
 	export const HOMEDRIVE: string;
 	export const HOMEPATH: string;
 	export const INIT_CWD: string;
-	export const LANG: string;
 	export const LOCALAPPDATA: string;
 	export const LOGONSERVER: string;
 	export const NODE: string;
+	export const npm_command: string;
+	export const npm_config_latest: string;
 	export const npm_config_node_gyp: string;
 	export const npm_config_registry: string;
 	export const npm_config_user_agent: string;
@@ -56,6 +56,7 @@ declare module '$env/static/private' {
 	export const npm_package_bugs_url: string;
 	export const npm_package_dependencies_cookie: string;
 	export const npm_package_dependencies_devalue: string;
+	export const npm_package_dependencies_esm_env: string;
 	export const npm_package_dependencies_kleur: string;
 	export const npm_package_dependencies_magic_string: string;
 	export const npm_package_dependencies_mime: string;
@@ -66,6 +67,7 @@ declare module '$env/static/private' {
 	export const npm_package_dependencies_undici: string;
 	export const npm_package_dependencies__sveltejs_vite_plugin_svelte: string;
 	export const npm_package_dependencies__types_cookie: string;
+	export const npm_package_description: string;
 	export const npm_package_devDependencies_marked: string;
 	export const npm_package_devDependencies_rollup: string;
 	export const npm_package_devDependencies_svelte: string;
@@ -109,24 +111,20 @@ declare module '$env/static/private' {
 	export const npm_package_scripts_lint: string;
 	export const npm_package_scripts_postinstall: string;
 	export const npm_package_scripts_test: string;
+	export const npm_package_scripts_test_cross_platform_build: string;
+	export const npm_package_scripts_test_cross_platform_dev: string;
 	export const npm_package_scripts_test_integration: string;
 	export const npm_package_scripts_test_unit: string;
 	export const npm_package_type: string;
 	export const npm_package_types: string;
 	export const npm_package_version: string;
 	export const NUMBER_OF_PROCESSORS: string;
-	export const OneDrive: string;
-	export const ORIGINAL_XDG_CURRENT_DESKTOP: string;
 	export const OS: string;
 	export const Path: string;
 	export const PATHEXT: string;
 	export const PNPM_SCRIPT_SRC_DIR: string;
-	export const POSH_AZURE_ENABLED: string;
-	export const POSH_GIT_ENABLED: string;
-	export const POSH_PID: string;
-	export const POSH_THEME: string;
-	export const POSH_THEMES_PATH: string;
-	export const POWERLINE_COMMAND: string;
+	export const POWERSHELL_DISTRIBUTION_CHANNEL: string;
+	export const POWERSHELL_TELEMETRY_OPTOUT: string;
 	export const PROCESSOR_ARCHITECTURE: string;
 	export const PROCESSOR_IDENTIFIER: string;
 	export const PROCESSOR_LEVEL: string;
@@ -137,22 +135,21 @@ declare module '$env/static/private' {
 	export const PROMPT: string;
 	export const PSModulePath: string;
 	export const PUBLIC: string;
-	export const SESSIONNAME: string;
+	export const STARSHIP_SESSION_KEY: string;
+	export const STARSHIP_SHELL: string;
 	export const SystemDrive: string;
 	export const SystemRoot: string;
 	export const TEMP: string;
-	export const TERM_PROGRAM: string;
-	export const TERM_PROGRAM_VERSION: string;
 	export const TMP: string;
 	export const USERDOMAIN: string;
 	export const USERDOMAIN_ROAMINGPROFILE: string;
 	export const USERNAME: string;
 	export const USERPROFILE: string;
-	export const VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
-	export const VSCODE_GIT_ASKPASS_MAIN: string;
-	export const VSCODE_GIT_ASKPASS_NODE: string;
-	export const VSCODE_GIT_IPC_HANDLE: string;
+	export const VIRTUAL_ENV_DISABLE_PROMPT: string;
 	export const windir: string;
+	export const WSLENV: string;
+	export const WT_PROFILE_ID: string;
+	export const WT_SESSION: string;
 }
 
 /**
@@ -165,7 +162,7 @@ declare module '$env/static/private' {
  * ```
  */
 declare module '$env/static/public' {
-
+	
 }
 
 /**
@@ -184,23 +181,23 @@ declare module '$env/dynamic/private' {
 	export const env: {
 		ALLUSERSPROFILE: string;
 		APPDATA: string;
-		COLORTERM: string;
 		CommonProgramFiles: string;
 		CommonProgramW6432: string;
 		COMPUTERNAME: string;
 		ComSpec: string;
-		CONDA_PROMPT_MODIFIER: string;
+		DOTNET_CLI_TELEMETRY_OPTOUT: string;
 		DriverData: string;
-		GIT_ASKPASS: string;
-		GOROOT: string;
+		FPS_BROWSER_APP_PROFILE_STRING: string;
+		FPS_BROWSER_USER_PROFILE_STRING: string;
 		HOME: string;
 		HOMEDRIVE: string;
 		HOMEPATH: string;
 		INIT_CWD: string;
-		LANG: string;
 		LOCALAPPDATA: string;
 		LOGONSERVER: string;
 		NODE: string;
+		npm_command: string;
+		npm_config_latest: string;
 		npm_config_node_gyp: string;
 		npm_config_registry: string;
 		npm_config_user_agent: string;
@@ -212,6 +209,7 @@ declare module '$env/dynamic/private' {
 		npm_package_bugs_url: string;
 		npm_package_dependencies_cookie: string;
 		npm_package_dependencies_devalue: string;
+		npm_package_dependencies_esm_env: string;
 		npm_package_dependencies_kleur: string;
 		npm_package_dependencies_magic_string: string;
 		npm_package_dependencies_mime: string;
@@ -222,6 +220,7 @@ declare module '$env/dynamic/private' {
 		npm_package_dependencies_undici: string;
 		npm_package_dependencies__sveltejs_vite_plugin_svelte: string;
 		npm_package_dependencies__types_cookie: string;
+		npm_package_description: string;
 		npm_package_devDependencies_marked: string;
 		npm_package_devDependencies_rollup: string;
 		npm_package_devDependencies_svelte: string;
@@ -265,24 +264,20 @@ declare module '$env/dynamic/private' {
 		npm_package_scripts_lint: string;
 		npm_package_scripts_postinstall: string;
 		npm_package_scripts_test: string;
+		npm_package_scripts_test_cross_platform_build: string;
+		npm_package_scripts_test_cross_platform_dev: string;
 		npm_package_scripts_test_integration: string;
 		npm_package_scripts_test_unit: string;
 		npm_package_type: string;
 		npm_package_types: string;
 		npm_package_version: string;
 		NUMBER_OF_PROCESSORS: string;
-		OneDrive: string;
-		ORIGINAL_XDG_CURRENT_DESKTOP: string;
 		OS: string;
 		Path: string;
 		PATHEXT: string;
 		PNPM_SCRIPT_SRC_DIR: string;
-		POSH_AZURE_ENABLED: string;
-		POSH_GIT_ENABLED: string;
-		POSH_PID: string;
-		POSH_THEME: string;
-		POSH_THEMES_PATH: string;
-		POWERLINE_COMMAND: string;
+		POWERSHELL_DISTRIBUTION_CHANNEL: string;
+		POWERSHELL_TELEMETRY_OPTOUT: string;
 		PROCESSOR_ARCHITECTURE: string;
 		PROCESSOR_IDENTIFIER: string;
 		PROCESSOR_LEVEL: string;
@@ -293,22 +288,21 @@ declare module '$env/dynamic/private' {
 		PROMPT: string;
 		PSModulePath: string;
 		PUBLIC: string;
-		SESSIONNAME: string;
+		STARSHIP_SESSION_KEY: string;
+		STARSHIP_SHELL: string;
 		SystemDrive: string;
 		SystemRoot: string;
 		TEMP: string;
-		TERM_PROGRAM: string;
-		TERM_PROGRAM_VERSION: string;
 		TMP: string;
 		USERDOMAIN: string;
 		USERDOMAIN_ROAMINGPROFILE: string;
 		USERNAME: string;
 		USERPROFILE: string;
-		VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
-		VSCODE_GIT_ASKPASS_MAIN: string;
-		VSCODE_GIT_ASKPASS_NODE: string;
-		VSCODE_GIT_IPC_HANDLE: string;
+		VIRTUAL_ENV_DISABLE_PROMPT: string;
 		windir: string;
+		WSLENV: string;
+		WT_PROFILE_ID: string;
+		WT_SESSION: string;
 		[key: `PUBLIC_${string}`]: undefined;
 		[key: string]: string | undefined;
 	}
