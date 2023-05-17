@@ -44,9 +44,10 @@ declare module '$env/static/private' {
 	export const LOGONSERVER: string;
 	export const NODE: string;
 	export const npm_command: string;
-	export const npm_config_latest: string;
+	export const npm_config_engine_strict: string;
 	export const npm_config_node_gyp: string;
 	export const npm_config_registry: string;
+	export const npm_config_resolution_mode: string;
 	export const npm_config_user_agent: string;
 	export const npm_execpath: string;
 	export const npm_lifecycle_event: string;
@@ -197,9 +198,10 @@ declare module '$env/dynamic/private' {
 		LOGONSERVER: string;
 		NODE: string;
 		npm_command: string;
-		npm_config_latest: string;
+		npm_config_engine_strict: string;
 		npm_config_node_gyp: string;
 		npm_config_registry: string;
+		npm_config_resolution_mode: string;
 		npm_config_user_agent: string;
 		npm_execpath: string;
 		npm_lifecycle_event: string;
